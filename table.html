@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="icon" href="/images/tblogo.png">
+    <link rel="stylesheet" href="/css/table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+<body>  
+    <div id="main">  
+        <div>        
+        <aside id="sidebar">
+            <div class="logo">
+                <img width="50%" src="/images/logo.png" >
+            </div>
+            <div class="side_bottom">
+                <div id="content">
+                    <ul>
+                        <li><a href="/index.html" style="padding: 7px 2.05vw 7px;"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                        <li><a href="/form.html"><i class="fa-regular fa-clipboard"></i>Insert</a></li>
+                        <li class="active"><a href="/table.html"><i class="fa-solid fa-table-list"></i>Table</a></li>
+                        <li><a href="/about.html"><i class="fa-regular fa-circle-question"></i>F&Q</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        </div> 
+        <!-- ==========================================aside bar ends here============================== -->
+        <!-- ==========================================mainn content start here========================== -->
+        <div id="middle" >
+            <div id="mf_top">
+                <span>D-ZELA</span>
+                <h4 id="time" style="margin-left: 15rem;"></h4>
+                <h3 id="theme" onclick="change()"><i class="fa-solid fa-moon"></i></h3>
+                <div id="us_info">
+                    <img height="30px" src="/images/profile-1.jpg" alt="">
+                    <h5>Dhairya Sharma</h5>
+                </div>
+            </div>
+            <div id="middle_con">
+               <div class="tdata"> 
+                 <table>
+                    <thead>
+                        <tr>
+                            <td>NAME</td>
+                            <td>ID</td>
+                            <td>AMOUNT</td>
+                            <td>DISCOUNT</td>
+                            <td>UPDATE</td>
+                            <td>DELETE</td>
+                        </tr>
+                    </thead>
+                   <tbody id="table_data">
+                   </tbody>
+                 </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="middle">
+        <form id="update_form" >
+            <input type="text" id="id" placeholder="Enter Product ID"><br>
+            <input type="text" id="name" placeholder="Enter Product name"><br>
+            <input type="text" id="amt" placeholder="Enter Product Amount"><br>
+            <input type="text" id="disc" placeholder="Enter Discount"><br>
+            <button onclick="close()" class="btn">Close</button>
+            <button onclick="update_main()" class="btn">Submit</button>
+          </form>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+     font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #05445e;
+}
+
+#sidebar{
+    background-color:#fff;
+        width: 16vw;
+        height: 100vh;  
+        position: fixed; 
+        border-right: 1px solid #CBE4DE;
+}
+.logo{
+    padding:  2vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #CBE4DE;
+
+    gap: 10px;
+}
+#content ul{
+    padding: 8vh 0;
+
+}
+#content li{
+    list-style: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px 0;
+    
+    margin-bottom: 24px;
+}
+#content a{
+    padding: 7px 6.7vw 7px 2.2vw;
+    text-decoration: none;
+    color: black;
+}
+#content li:hover{
+    background-color: #cfe3d9ba;
+    /*  */
+    transition: all 3ms ease-in;
+    
+    border-left: 5px solid #20a1d08f;
+    border-radius: 0 5px 5px 0;
+}
+#content li:hover a{
+    margin-left: 6px;
+}
+#content li.active a{
+    margin-left: -6px;
+}
+#content li.active{
+    background-color: #cfe3d9ba;
+    border-left: 5px solid #20a1d08f;
+    border-radius: 0 5px 5px 0;
+    /* margin-left: -6px; */
+}
+#content a i{
+    margin-right: 10px;
+}
+/* ====================================sidebar end========================= */
+/* ====================================main content ========================= */
+#middle{
+   background-color: white;
+    margin-left: 16vw;
+    overflow: hidden; 
+}
+
+
+#mf_top{
+    height: 72px;
+    background-color: #05445e;
+    border-bottom: 1px solid #CBE4DE;
+    color: #CBE4DE;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+#mf_top span,h4{
+    font-size: 1.2rem;
+    margin-left: 50px;
+    font-family: "Montserrat";
+}
+#theme{
+    position: absolute;
+    right:220px;
+    background-color: #00000000;
+}
+#us_info{
+    display: flex;
+    position: absolute;
+    right:30px;
+    background-color: #176B87;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+#us_info h5{
+    font-size:16px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#middle_con{
+    padding: 80px 150px;
+    width: 100%;
+    min-height: 68.4vh;
+    display: flex;
+    flex-direction: column;
+}
+.con{ 
+    margin-top: 25px;
+    width: 55vw;
+    height: 50px;
+    display: flex;
+    padding: 0 75px;
+    align-items: center;
+    background-color: #05445e;
+}
+p{
+    color: #CBE4DE;
+    font-size: 20px;
+}
+.bu{
+    position: relative;
+    width: 1.5rem;
+    left: 41vw;
+    font-size: 18px;
+    color: #05445e;
+    background-color: #CBE4DE;
+    border: none;
+    cursor: pointer;
+}
+.con_hide{
+    margin-top: 25px;
+    position: fixed;
+    z-index: -1;
+    width: 55vw;
+    padding: 10px 75px;
+    align-items: center;
+    background-color: #05445e;
+}

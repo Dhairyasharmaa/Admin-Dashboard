@@ -1,0 +1,94 @@
+{
+  "info": [
+    {
+      "pd_name": "Laptop",
+      "id": "2",
+      "amount": "80000",
+      "discount": "6000"
+    },
+    {
+      "pd_name": "Tablet",
+      "id": "3",
+      "amount": "40000",
+      "discount": "3000"
+    },
+    {
+      "pd_name": "Computer",
+      "id": "4",
+      "amount": "25000",
+      "discount": "2500"
+    },
+    {
+      "pd_name": "AC",
+      "id": "5",
+      "amount": 50000,
+      "discount": 4000
+    },
+    {
+      "pd_name": "TV",
+      "id": "6",
+      "amount": 40000,
+      "discount": 2500
+    },
+    {
+      "pd_name": "Fan",
+      "id": "7",
+      "amount": "4000",
+      "discount": "350"
+    },
+    {
+      "pd_name": "Speaker",
+      "id": "8",
+      "amount": 8000,
+      "discount": 500
+    },
+    {
+      "pd_name": "Cooler",
+      "id": "9",
+      "amount": 18000,
+      "discount": 1500
+    },
+    {
+      "pd_name": "Vacuum Cleaner",
+      "id": "10",
+      "amount": 12000,
+      "discount": 900
+    },
+    {
+      "pd_name": "Geysers",
+      "id": "11",
+      "amount": 25000,
+      "discount": 3000
+    },
+    {
+      "pd_name": "Mixer Grinder",
+      "id": "12",
+      "amount": "8000",
+      "discount": "500"
+    },
+    {
+      "id": "13",
+      "pd_name": "Air fryer",
+      "amount": "22000",
+      "discount": "2000"
+    },
+    {
+      "id": "14",
+      "pd_name": "Headphone",
+      "amount": "20000",
+      "discount": "2500"
+    },
+    {
+      "pd_name": "light",
+      "id": "15",
+      "amount": "10000",
+      "discount": "2500"
+    },
+    {
+      "id": "3",
+      "pd_name": "Dhairya Sharma",
+      "amount": "12000",
+      "discount": "263"
+    }
+  ]
+}

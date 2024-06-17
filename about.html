@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="icon" href="/images/tblogo.png">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div id="main">  
+        <div>        
+        <aside id="sidebar">
+            <div class="logo">
+                <img width="50%" src="/images/logo.png" >
+                
+            </div>
+            <div class="side_bottom">
+                <div id="content">
+                    <ul>
+                        <li><a href="/index.html" style="padding: 7px 2.05vw 7px;"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                        <li><a href="/form.html"><i class="fa-regular fa-clipboard"></i>Insert</a></li>
+                        <li><a href="/table.html"><i class="fa-solid fa-table-list"></i>Table</a></li>
+                        <li class="active"><a href="/about.html"><i class="fa-regular fa-circle-question"></i>F&Q</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        </div> 
+        <!-- ==========================================aside bar ends here============================== -->
+        <!-- ==========================================mainn content start here========================== -->
+        <div id="middle">
+            <div id="mf_top">
+                <span>D-ZELA</span>
+                <h4 id="time" style="margin-left: 15rem;"></h4>
+                <h3 id="theme" onclick="change()"><i class="fa-solid fa-moon"></i></h3>
+                <div id="us_info">
+                    <img height="30px" src="/images/profile-1.jpg" alt="">
+                    <h5>Dhairya Sharma</h5>
+                </div>
+            </div>
+            <div id="middle_con"> 
+                <div class="con1">
+                    <div  class="con">
+                        <p>What is Admin Dashboard?</p>
+                        <button class="bu" onclick="o1(0)"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div  class="con_hide" class="demo">
+                        <p>An admin dashboard is a web-based interface that provides administrators with a centralized platform to monitor, manage, and analyze various aspects of an organization, application, or system. </p>
+                    </div>
+                </div>
+                <div  class="con1">
+                    <div  class="con">
+                        <p>What is an admin dashboard used for?</p>
+                        <button style="left: 34.5vw;" class="bu" onclick="o1(1)"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div  class="con_hide" class="demo">
+                        <p>An admin dashboard allows at-a-glance access to the crucial information for the specific needs of a particular professional or a team. Dashboards provide users with a comprehensive overview of the key data, reports, KPIs, etc., and enable drilling down to more details if required.</p>
+                    </div>
+                </div>
+                <div  class="con1">
+                    <div  class="con">
+                        <p>What is the objective of admin panel?</p>
+                        <button style="left: 35vw;" class="bu" onclick="o1(2)"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div  class="con_hide" class="demo">
+                        <p>An admin panel enables administrators of an application, website, or IT system to manage its configurations, settings, content, and features and carry out oversight functions critical to the business. It allows them to view the state of the platform and take any action in the performance of their duties.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

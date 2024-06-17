@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="icon" href="/images/tblogo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ <body>  
+    <div id="main">  
+        <div>        
+        <aside id="sidebar">
+            <div class="logo">
+                <img width="50%" src="./images/logo.png" >
+                
+            </div>
+            <div class="side_bottom">
+                <div id="content">
+                    <ul>
+                        <li class="active"><a href="/index.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                        <li><a href="/form.html"><i class="fa-regular fa-clipboard"></i>Insert</a></li>
+                        <li><a href="/table.html"><i class="fa-solid fa-table-list"></i>Table</a></li>
+                        <li><a href="/about.html"><i class="fa-regular fa-circle-question"></i>F&Q</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        </div> 
+        <!-- ==========================================aside bar ends here============================== -->
+        <!-- ==========================================mainn content start here========================== -->
+        <div id="middle">
+            <div id="mf_top">
+                <span>D-ZELA</span>
+                <h4 id="time" style="margin-left: 15rem;"></h4>
+                <h3 id="theme" onclick="change()"><i class="fa-solid fa-moon"></i></h3>
+                <div id="us_info">
+                    <img height="30px" src="./images/profile-1.jpg" alt="">
+                    <h5>Dhairya Sharma </h5>
+                </div>
+            </div>
+            <div id="middle_con"> 
+                <div id="m_first" class="m_com">
+                    <div id="mf_con1">
+                        <h3>Your target is incomplete</h3>
+                        <p>You have completed 48% of the given target, you can also check your status.</p>
+                        <a href="#">click here</a>
+                    </div>
+                    <div id="mf_con2">
+                        <div id="mf_con2_1"></div>
+                        <span>48%</span>
+                    </div>    
+                </div>
+                <div class="m_com">
+                    <div class="box_logo">
+                        <i style="color: #05445e;" class="fa-solid fa-user-group"></i>
+                    </div>
+                    <div class="info">
+                        <h5>Total Customers</h5>
+                        <h3>1,02,890</h3>
+                        <img  src="./images/graph1.png" alt="">
+                        <a class="viewall" href="#">View All<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="info_mini">
+                        <span>+40%</span>
+                        <p class="info_mini_p">this month</p>
+                    </div>
+                </div>
+                <div class="m_com">
+                    <div class="box_logo">
+                        <i style="color: #05445e;" class="fa-solid fa-wallet"></i>
+                    </div>
+                    <div class="info">
+                        <h5>Total Revenue</h5>
+                        <h3>$56,562</h3>
+                        <img style="margin-top: 20px;" src="./images/graph2.jpg" alt="">
+                        <a style="margin-top: 19px;" class="viewall" href="#">View All<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="info_mini">
+                        <span style="color: red;">-25%</span>
+                        <p class="info_mini_p">this month</p>
+                    </div>
+                </div>
+                
+                <div class="m_com">
+                    <div class="box_logo">
+                       <i style="color: #05445e;"  class="fa-solid fa-wave-square"></i>
+                    </div>
+                    <div class="info">
+                        <h5>Conversion Ratio</h5>
+                        <h3>23.08%</h3>
+                        <img  style="margin-top: 20px;" src="./images/graph3.jpg" alt="">
+                        <a style="margin-top: 19px;" class="viewall" href="#">View All<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="info_mini">
+                        <span style="color: rgba(3, 255, 37, 0.83);">+15%</span>
+                        <p class="info_mini_p" >this month</p>
+                    </div>
+                </div>
+                <div class="m_com">
+                    <div class="box_logo">
+                        <i style="color: #05445e;" class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="info">
+                        <h5>Total Deals</h5>
+                        <h3>2543</h3>
+                        <img  style="margin-top: 20px;" src="./images/graph4.jpg" alt="">
+                        <a style="margin-top: 10px;" class="viewall" href="#">View All<i class="fa-solid fa-arrow-right-long"></i></a>
+
+                    </div>
+                    <div class="info_mini">
+                        <span>+19%</span>
+                        <p class="info_mini_p">this month</p>
+                    </div>
+                </div>
+                <div id="m_last" class="m_com">
+                    <div class="top_label">
+                        <h4>Deals Status</h4>
+                        <span class="info_mini_p">View all <i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    <div class="m_last_con">
+                        <ul>
+                            <li>Successful Deals <span class="numbers">987 deals</span></li>
+                            <li>Pending Deals <span class="numbers">1073 deals</span></li>
+                            <li>Rejected Deals <span class="numbers">1674 deals</span></li>
+                            <li>Upcoming Deals <span class="numbers">921 deals</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

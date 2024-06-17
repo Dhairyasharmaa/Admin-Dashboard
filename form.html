@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="icon" href="/images/tblogo.png">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>        
+        <div id="main">
+            <div>
+            <aside id="sidebar">
+                <div class="logo">
+                    <img width="50%" src="/images/logo.png" >
+                    
+                </div>
+                <div class="side_bottom">
+                    <div id="content">
+                        <ul>
+                            <li><a href="/index.html" style="padding: 7px 2.05vw 7px;"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                            <li class="active"><a href="/form.html"><i class="fa-regular fa-clipboard"></i>Insert</a></li>
+                            <li><a href="/table.html"><i class="fa-solid fa-table-list"></i>Table</a></li>
+                            <li><a href="/about.html"><i class="fa-regular fa-circle-question"></i>F&Q</a></li>                        
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            </div> 
+            <div id="main_con">
+                <div id="mf_top">
+                    <span>D-ZELA</span>
+                    <h4 id="time" style="margin-left: 15rem;"></h4>
+                    <h3 id="theme" onclick="change()"><i class="fa-solid fa-moon"></i></h3>
+                    <div id="us_info">
+                        <img height="30px" src="/images/profile-1.jpg" alt="">
+                        <h5>Dhairya Sharma</h5>
+                    </div>
+                </div>
+                <div id="middle">
+                    <form onsubmit="return fun1()">
+                        <input onkeypress="r1()" type="text" id="pd_name" placeholder="Enter Product name"><br>
+                        <h5 id="pd_name_h"></h5>
+                        <input onkeypress="r2()" type="text" id="pd_id" placeholder="Enter Product ID"><br>
+                        <h5 id="pd_id_h"></h5>
+                        <input onkeypress="r3()" type="text" id="pd_amt" placeholder="Enter Product Amount"><br>
+                        <h5 id="pd_am_h"></h5>
+                        <input onkeypress="r4()" type="text" id="dis" placeholder="Enter Discount"><br>
+                        <h5 id="pd_ds_h"></h5>
+                        <input type="submit" id="btn">
+                      </form>
+                </div>
+            </div>
+        </div>
+    <script src="/script.js"></script>
+</body>
+</html>
